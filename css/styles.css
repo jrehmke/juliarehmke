@@ -11,26 +11,37 @@ body {
 h1 {
 }
 
-div img{
+img{
+  border-radius: 10px;
+}
+
+figure{
+  background-color: white;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+figure img{
   border: 2px solid black;
   background: white;
   border-radius: 10px;
   width: 200px; 
   margin: 10px;
-  transition:transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
-div img:hover{
-  transform: scale(1.1);
+figure img:hover{
+  transform: scale(1.05);
 }
 
 #gallery{
   width: 600px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
- 
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(2, 1fr);
 }
+
 
 div.lg-item,
 div.lg-loaded,
@@ -41,3 +52,5 @@ right: 0;
 bottom: 0;
 left: 0;
 }
+
+
